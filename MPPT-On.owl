@@ -1,0 +1,1512 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#"
+     xml:base="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_192fc41e_b443_4090_bef0_20bca64cbbf7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_192fc41e_b443_4090_bef0_20bca64cbbf7">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">TrackingGP</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">handlesFunctionOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_5e5b8a37_03c6_4ed8_8c8b_1f98301fd3d0 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_5e5b8a37_03c6_4ed8_8c8b_1f98301fd3d0">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">isEvaluated</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">has</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bf1fa0ac_da31_4b30_861a_dc92047f3d5e -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bf1fa0ac_da31_4b30_861a_dc92047f3d5e">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">hasComplexity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bff85bf1_24c1_450b_a9d7_bf9c80b8f9b3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bff85bf1_24c1_450b_a9d7_bf9c80b8f9b3">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label xml:lang="fr">hasImplementation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_9b5f9045_0d18_41eb_ab08_236db3c6bb92 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_9b5f9045_0d18_41eb_ab08_236db3c6bb92">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">sensingParameter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_a48c163f_8ae2_4744_9c5c_61e28e0dcd0f -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_a48c163f_8ae2_4744_9c5c_61e28e0dcd0f">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label xml:lang="fr">pwm</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_b3199a8d_2296_41f6_924f_df1389a112bd -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_b3199a8d_2296_41f6_924f_df1389a112bd">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:label xml:lang="fr">dutyCycle</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_e4dafb80_793c_4647_b8be_5d8ce9c79413 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_e4dafb80_793c_4647_b8be_5d8ce9c79413">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">microController</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_ff52fe5b_122a_44bc_a547_08759dcf289a -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLDataProperty_ff52fe5b_122a_44bc_a547_08759dcf289a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="fr">referenceParameter</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898"/>
+        <rdfs:label xml:lang="fr">Complexity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_006cf4f8_e451_404f_baef_266887b436ba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_006cf4f8_e451_404f_baef_266887b436ba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">IC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_058858bd_b2cb_410c_bfba_660866e67792 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_058858bd_b2cb_410c_bfba_660866e67792">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_4507b2d7_7257_46f3_94df_2dd314df12b4"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_a980f1d9_6c2f_45c4_ae1d_5096188035f3"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1"/>
+        <rdfs:label xml:lang="fr">Shading</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_10878e90_9a84_49de_8391_528e1d7fa8d9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_10878e90_9a84_49de_8391_528e1d7fa8d9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_ccb7a7b6_156e_47cd_be3f_45daf955eb42"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d8f11de3_51db_43ca_9286_234de666397b"/>
+        <rdfs:label xml:lang="fr">AI_Based</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d8f11de3_51db_43ca_9286_234de666397b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_429e3c99_61b0_4c13_b277_988d3173ef8d"/>
+        <rdfs:label xml:lang="fr">SwarmIntelligence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1545ebbd_1fe8_4b35_b3b2_5b4c1815a8af -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1545ebbd_1fe8_4b35_b3b2_5b4c1815a8af">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_5e5b8a37_03c6_4ed8_8c8b_1f98301fd3d0"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b68c77d2_d974_4f50_afbe_823c94281673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bf1fa0ac_da31_4b30_861a_dc92047f3d5e"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bff85bf1_24c1_450b_a9d7_bf9c80b8f9b3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">HybridMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_17dce2a2_c6a2_4cdd_9578_d7fe554cb1a9 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_17dce2a2_c6a2_4cdd_9578_d7fe554cb1a9">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">BiSectionSearch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61">
+        <rdfs:label xml:lang="fr">Modeling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_213265f4_6751_4519_9464_7a2bbbfb8a74 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_213265f4_6751_4519_9464_7a2bbbfb8a74">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf"/>
+        <rdfs:label xml:lang="fr">ABC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2285298e_8c6a_4a9f_aa92_b84584766e05 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2285298e_8c6a_4a9f_aa92_b84584766e05">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_10878e90_9a84_49de_8391_528e1d7fa8d9"/>
+        <rdfs:label xml:lang="fr">FL</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2cb4a5ea_73f9_479a_8034_3aa9cb909d47 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2cb4a5ea_73f9_479a_8034_3aa9cb909d47">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_5e5b8a37_03c6_4ed8_8c8b_1f98301fd3d0"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a44b88ae_cb92_4b45_b06f_fad0092a20ef"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bff85bf1_24c1_450b_a9d7_bf9c80b8f9b3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">PE_BasedMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_349c3173_b050_4ea0_b32a_7fbae1460678 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_349c3173_b050_4ea0_b32a_7fbae1460678">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_5e5b8a37_03c6_4ed8_8c8b_1f98301fd3d0"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6ed322eb_c65c_4ca0_a83b_28ab13df26fd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f64d4971_5c07_492f_b627_ce1c3b1301eb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">P&amp;O</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_34bb709a_99fd_4214_a22a_93bf2f964074 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_34bb709a_99fd_4214_a22a_93bf2f964074">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2cb4a5ea_73f9_479a_8034_3aa9cb909d47"/>
+        <rdfs:label xml:lang="fr">TEODI</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_410ee194_1155_4746_a603_de8c444f84fe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_410ee194_1155_4746_a603_de8c444f84fe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_10878e90_9a84_49de_8391_528e1d7fa8d9"/>
+        <rdfs:label xml:lang="fr">ANFIS</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_429e3c99_61b0_4c13_b277_988d3173ef8d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_429e3c99_61b0_4c13_b277_988d3173ef8d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d8f11de3_51db_43ca_9286_234de666397b"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">EvolutionaryAlgorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_4d9179ea_24cd_4c6b_90df_bcf0cfe94b3f -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_4d9179ea_24cd_4c6b_90df_bcf0cfe94b3f">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_429e3c99_61b0_4c13_b277_988d3173ef8d"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d725a360_7462_41da_a8f3_1b70c50ea615"/>
+        <rdfs:label xml:lang="fr">GA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_4eab1442_237e_4cb2_b298_79fc9085c086 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_4eab1442_237e_4cb2_b298_79fc9085c086">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">SlidingModeControl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_55e6e481_42cd_4378_8b98_c55aa5f7c2f7 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_55e6e481_42cd_4378_8b98_c55aa5f7c2f7">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf"/>
+        <rdfs:label xml:lang="fr">BA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898"/>
+        <rdfs:label xml:lang="fr">Convergence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5de9d0d0_83f6_4ca1_ae98_21bbca593bbd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5de9d0d0_83f6_4ca1_ae98_21bbca593bbd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2cb4a5ea_73f9_479a_8034_3aa9cb909d47"/>
+        <rdfs:label xml:lang="fr">BypassDiode</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">MpptApproach</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6ed322eb_c65c_4ca0_a83b_28ab13df26fd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6ed322eb_c65c_4ca0_a83b_28ab13df26fd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_dc596a52_925c_431e_8015_79864df7da8d"/>
+        <rdfs:label xml:lang="fr">High</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_73915e2d_3b19_44b1_892d_70caad26fc1e -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_73915e2d_3b19_44b1_892d_70caad26fc1e">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bf1fa0ac_da31_4b30_861a_dc92047f3d5e"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">3PointWeightedAve</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1">
+        <rdfs:label xml:lang="fr">MpptControlSystem</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_7e903d28_4a70_439a_b7b9_5445db276b23 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_7e903d28_4a70_439a_b7b9_5445db276b23">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61"/>
+        <rdfs:label xml:lang="fr">NonLinearity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8d6424ed_1194_4df6_99df_7c6079465f0d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8d6424ed_1194_4df6_99df_7c6079465f0d">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">BetaMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8df6daa6_30e1_40ee_8826_d116dff407ba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8df6daa6_30e1_40ee_8826_d116dff407ba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf"/>
+        <rdfs:label xml:lang="fr">GWO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8edc9a35_6127_4599_8393_e922a6ea2331 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8edc9a35_6127_4599_8393_e922a6ea2331">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf"/>
+        <rdfs:label xml:lang="fr">FLC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898"/>
+        <rdfs:label xml:lang="fr">Efficiency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_3c07f6a2_04ed_4f86_86e7_f2b0b71f78c5"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_3c848554_38f3_4e9a_9416_ad9804bec1b8"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_79325aaa_faf5_45ba_b996_b13a0b74257b"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_7dfb9e73_5dbc_4e4d_bb09_523e761ec8bf"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61"/>
+        <rdfs:label xml:lang="fr">PvType</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9b24caad_2da8_4762_a2e8_1e2a92db69bf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9b24caad_2da8_4762_a2e8_1e2a92db69bf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf"/>
+        <rdfs:label xml:lang="fr">ACO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a44b88ae_cb92_4b45_b06f_fad0092a20ef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a44b88ae_cb92_4b45_b06f_fad0092a20ef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_dc596a52_925c_431e_8015_79864df7da8d"/>
+        <rdfs:label xml:lang="fr">Medium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a8b7f3a8_2062_4a31_9b98_f96596a96e85 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a8b7f3a8_2062_4a31_9b98_f96596a96e85">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">HC</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898"/>
+        <rdfs:label xml:lang="fr">Cost</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_aab27c11_c132_430d_aa5d_cc380574b640 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_aab27c11_c132_430d_aa5d_cc380574b640">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_10878e90_9a84_49de_8391_528e1d7fa8d9"/>
+        <rdfs:label xml:lang="fr">ANN</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_abb733c8_8fff_4b1b_b35b_40a372188fbd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_abb733c8_8fff_4b1b_b35b_40a372188fbd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2cb4a5ea_73f9_479a_8034_3aa9cb909d47"/>
+        <rdfs:label xml:lang="fr">PE_qualizer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b68c77d2_d974_4f50_afbe_823c94281673 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b68c77d2_d974_4f50_afbe_823c94281673">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_dc596a52_925c_431e_8015_79864df7da8d"/>
+        <rdfs:label xml:lang="fr">Low</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b757220a_d1c8_491b_9600_000629d1d6bd -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b757220a_d1c8_491b_9600_000629d1d6bd">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61"/>
+        <rdfs:label xml:lang="fr">Algorithm</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_bd2210aa_7737_49cb_80c3_d5a7ed0a4c83 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_bd2210aa_7737_49cb_80c3_d5a7ed0a4c83">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">FractionalOcv</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_bf6aeaff_e2dd_430c_b894_8c4460167eb5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_bf6aeaff_e2dd_430c_b894_8c4460167eb5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">RcControl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_ccb7a7b6_156e_47cd_be3f_45daf955eb42 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_ccb7a7b6_156e_47cd_be3f_45daf955eb42">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_5e5b8a37_03c6_4ed8_8c8b_1f98301fd3d0"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6ed322eb_c65c_4ca0_a83b_28ab13df26fd"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_bff85bf1_24c1_450b_a9d7_bf9c80b8f9b3"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">IntelligentTechnique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_cf3473d7_c163_4084_84b0_00711bbdb491 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_cf3473d7_c163_4084_84b0_00711bbdb491">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_11b79b7d_5c1e_479e_a15a_4ecbb0ba7ebf"/>
+        <rdfs:label xml:lang="fr">PSO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_058858bd_b2cb_410c_bfba_660866e67792"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">ConventionalMethod</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d6f95051_a9f1_46ee_ba05_8f3112ebd577 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d6f95051_a9f1_46ee_ba05_8f3112ebd577">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">LoadCVmax</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d725a360_7462_41da_a8f3_1b70c50ea615 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d725a360_7462_41da_a8f3_1b70c50ea615">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_429e3c99_61b0_4c13_b277_988d3173ef8d"/>
+        <rdfs:label xml:lang="fr">DE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d8f11de3_51db_43ca_9286_234de666397b -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d8f11de3_51db_43ca_9286_234de666397b">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_ccb7a7b6_156e_47cd_be3f_45daf955eb42"/>
+        <rdfs:label xml:lang="fr">MetaHeuristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_dc596a52_925c_431e_8015_79864df7da8d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_dc596a52_925c_431e_8015_79864df7da8d">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6ed322eb_c65c_4ca0_a83b_28ab13df26fd"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a44b88ae_cb92_4b45_b06f_fad0092a20ef"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b68c77d2_d974_4f50_afbe_823c94281673"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e034ac9a_d73f_41b0_b68c_9a55c7c4f07c"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e034ac9a_d73f_41b0_b68c_9a55c7c4f07c -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e034ac9a_d73f_41b0_b68c_9a55c7c4f07c">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_11ea9eb3_0dbc_48e9_ae76_c7cb6ffd40fa"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_2a655718_537d_407c_9e68_163d369975b9"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1fcaad1a_9013_4f04_988a_e8f46c714c61"/>
+        <rdfs:label xml:lang="fr">InputPatterns</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e277be69_615f_4e0c_bdb3_3b210c43e336 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e277be69_615f_4e0c_bdb3_3b210c43e336">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898"/>
+        <rdfs:label xml:lang="fr">PeriodicTunning</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4">
+        <rdfs:label xml:lang="fr">AmbientCondition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6eec0fa_b290_423e_8cbf_2cb78b593a88 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6eec0fa_b290_423e_8cbf_2cb78b593a88">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_524b06ca_fd97_4ce5_bbe8_c440411ace76"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLObjectProperty_9fdfca89_2525_429d_8d0e_5b8eea2a5cef"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="fr">FractionalScc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898">
+        <rdfs:label xml:lang="fr">MpptCharacteristic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_132ced21_b5b0_422d_88aa_1eab35b4688b"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_43c248b8_0a07_43c6_9408_25a6aba19067"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_57d90540_108c_4594_89dd_add4cb0ac1a4"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_db1a81b5_748d_49e3_87be_4290d907f5c9"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+        <rdfs:label xml:lang="fr">Climate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f64d4971_5c07_492f_b627_ce1c3b1301eb -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f64d4971_5c07_492f_b627_ce1c3b1301eb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_eac66362_f2e5_4028_b432_696d49b78898"/>
+        <rdfs:label xml:lang="fr">OscillationAroundGP</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_11ea9eb3_0dbc_48e9_ae76_c7cb6ffd40fa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_11ea9eb3_0dbc_48e9_ae76_c7cb6ffd40fa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e034ac9a_d73f_41b0_b68c_9a55c7c4f07c"/>
+        <rdfs:label xml:lang="fr">IrradiancePattern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_132ced21_b5b0_422d_88aa_1eab35b4688b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_132ced21_b5b0_422d_88aa_1eab35b4688b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1"/>
+        <rdfs:label xml:lang="fr">Temperature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_2a655718_537d_407c_9e68_163d369975b9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_2a655718_537d_407c_9e68_163d369975b9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e034ac9a_d73f_41b0_b68c_9a55c7c4f07c"/>
+        <rdfs:label xml:lang="fr">TemperaturePattern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_3c07f6a2_04ed_4f86_86e7_f2b0b71f78c5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_3c07f6a2_04ed_4f86_86e7_f2b0b71f78c5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+        <rdfs:label xml:lang="fr">Thermal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_3c848554_38f3_4e9a_9416_ad9804bec1b8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_3c848554_38f3_4e9a_9416_ad9804bec1b8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+        <rdfs:label xml:lang="fr">PolyCrystalline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_43c248b8_0a07_43c6_9408_25a6aba19067 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_43c248b8_0a07_43c6_9408_25a6aba19067">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1"/>
+        <rdfs:label xml:lang="fr">Humidity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_4507b2d7_7257_46f3_94df_2dd314df12b4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_4507b2d7_7257_46f3_94df_2dd314df12b4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_058858bd_b2cb_410c_bfba_660866e67792"/>
+        <rdfs:label xml:lang="fr">PSCs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_57d90540_108c_4594_89dd_add4cb0ac1a4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_57d90540_108c_4594_89dd_add4cb0ac1a4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1"/>
+        <rdfs:label xml:lang="fr">Irradiance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_79325aaa_faf5_45ba_b996_b13a0b74257b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_79325aaa_faf5_45ba_b996_b13a0b74257b">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+        <rdfs:label xml:lang="fr">MonoCrystalline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_7dfb9e73_5dbc_4e4d_bb09_523e761ec8bf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_7dfb9e73_5dbc_4e4d_bb09_523e761ec8bf">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+        <rdfs:label xml:lang="fr">Amorphous</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_a980f1d9_6c2f_45c4_ae1d_5096188035f3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_a980f1d9_6c2f_45c4_ae1d_5096188035f3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_058858bd_b2cb_410c_bfba_660866e67792"/>
+        <rdfs:label xml:lang="fr">USCs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_db1a81b5_748d_49e3_87be_4290d907f5c9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLNamedIndividual_db1a81b5_748d_49e3_87be_4290d907f5c9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f27f5428_8e26_4290_9723_4e96ea0c58b1"/>
+        <rdfs:label xml:lang="fr">Wind</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_0058e66c_6e27_43a0_aaa1_f453a87dd446"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5967195b_4c7b_4382_af54_23eef6f6ca0b"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9094abce_3c32_4576_93b1_7f4d31fad45c"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a91ecaf6_1b25_46fe_803b_e6c34c98eff6"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e277be69_615f_4e0c_bdb3_3b210c43e336"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_f64d4971_5c07_492f_b627_ce1c3b1301eb"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_006cf4f8_e451_404f_baef_266887b436ba"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_17dce2a2_c6a2_4cdd_9578_d7fe554cb1a9"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_349c3173_b050_4ea0_b32a_7fbae1460678"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_4eab1442_237e_4cb2_b298_79fc9085c086"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_73915e2d_3b19_44b1_892d_70caad26fc1e"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8d6424ed_1194_4df6_99df_7c6079465f0d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a8b7f3a8_2062_4a31_9b98_f96596a96e85"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_bd2210aa_7737_49cb_80c3_d5a7ed0a4c83"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_bf6aeaff_e2dd_430c_b894_8c4460167eb5"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d6f95051_a9f1_46ee_ba05_8f3112ebd577"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6eec0fa_b290_423e_8cbf_2cb78b593a88"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_1545ebbd_1fe8_4b35_b3b2_5b4c1815a8af"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2cb4a5ea_73f9_479a_8034_3aa9cb909d47"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_ccb7a7b6_156e_47cd_be3f_45daf955eb42"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_d4577226_8d6c_405e_8656_811430164d61"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_213265f4_6751_4519_9464_7a2bbbfb8a74"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_55e6e481_42cd_4378_8b98_c55aa5f7c2f7"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8df6daa6_30e1_40ee_8826_d116dff407ba"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_8edc9a35_6127_4599_8393_e922a6ea2331"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9b24caad_2da8_4762_a2e8_1e2a92db69bf"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_cf3473d7_c163_4084_84b0_00711bbdb491"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_2285298e_8c6a_4a9f_aa92_b84584766e05"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_410ee194_1155_4746_a603_de8c444f84fe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_aab27c11_c132_430d_aa5d_cc380574b640"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_34bb709a_99fd_4214_a22a_93bf2f964074"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_5de9d0d0_83f6_4ca1_ae98_21bbca593bbd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_abb733c8_8fff_4b1b_b35b_40a372188fbd"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6e1320cb_bb7b_40cc_a98c_77f60cbc18eb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_75bc349f_b98c_4b04_a7bb_dbe637b18bc1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_dc596a52_925c_431e_8015_79864df7da8d"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e6739eb5_cb64_460c_938d_04a49a8a1fc4"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_6ed322eb_c65c_4ca0_a83b_28ab13df26fd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_a44b88ae_cb92_4b45_b06f_fad0092a20ef"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b68c77d2_d974_4f50_afbe_823c94281673"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_7e903d28_4a70_439a_b7b9_5445db276b23"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_9569c026_438c_4928_9eee_a23e422c068b"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_b757220a_d1c8_491b_9600_000629d1d6bd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/khof01/ontologies/2020/2/untitled-ontology-53#OWLClass_e034ac9a_d73f_41b0_b68c_9a55c7c4f07c"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
