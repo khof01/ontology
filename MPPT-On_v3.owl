@@ -1,0 +1,2396 @@
+@prefix : <http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39> .
+
+<http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39> rdf:type owl:Ontology ;
+                                                                            rdfs:comment "This is an ontology representing knowledge base of shading problems in PV project planning. MPPT methods, their characteristics, and relationships of various factors related to shading that improve the system design are presented in the ontology model as well." ;
+                                                                            rdfs:label "MPPTApproach" .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#affects
+:affects rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:label "affects" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#canDealWith
+:canDealWith rdf:type owl:ObjectProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :MpptApproach ,
+                         :PvPerformanceModel ;
+             rdfs:range :HandlingNonLinearity .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:domain :MpptApproach ;
+                   rdfs:range :MethodCharacteristic .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasDatabase
+:hasDatabase rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:TransitiveProperty ;
+             rdfs:domain :PlanningTool ;
+             rdfs:range :DataLibrary ;
+             rdfs:comment "This objective property is defined as Transitive because having one database is considered as a database for the database library of the planning tool." .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#isReliable
+:isReliable rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:label "isReliableWith" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#needs
+:needs rdf:type owl:ObjectProperty ,
+                owl:FunctionalProperty ;
+       rdfs:label "needs" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#InverterName
+:InverterName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Inverter ;
+              rdfs:range xsd:string ;
+              rdfs:label "inverterName" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Rs
+:Rs rdf:type owl:DatatypeProperty ;
+    rdfs:domain :PvPerformanceModel ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "PV model parameter: serial quivalent resistance (Rs)" ;
+    rdfs:label "seriesResistance" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Rsh
+:Rsh rdf:type owl:DatatypeProperty ;
+     rdfs:domain :PvPerformanceModel ;
+     rdfs:range xsd:decimal ;
+     rdfs:comment "PV model parameter: parallel equivalent resistance (Rsh or Rp)" ;
+     rdfs:label "parallelResistance" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmOperationProcess_Crossover
+:algorithmOperationProcess_Crossover rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :MetaHeuristic ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:label "algorithmOperationProcess_Crossover" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmOperationProcess_Initialization
+:algorithmOperationProcess_Initialization rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain :MetaHeuristic ;
+                                          rdfs:range xsd:string ;
+                                          rdfs:label "algorithmOperationProcess_Initialization" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmOperationProcess_Mutation
+:algorithmOperationProcess_Mutation rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain :MetaHeuristic ;
+                                    rdfs:range xsd:string ;
+                                    rdfs:label "algorithmOperationProcess_Mutation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmOperationProcess_Selection
+:algorithmOperationProcess_Selection rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :MetaHeuristic ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "The selection process is performed to collect the best solutions, which are used as target vectors for the next generation (xi+1)." ;
+                                     rdfs:label "algorithmOperationProcess_Selection" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmOperationProcesses
+:algorithmOperationProcesses rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :MpptApproach ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "Does the algorithm have any opeartion processes?" ;
+                             rdfs:label "algorithmOperationProcesses" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmParameters
+:algorithmParameters rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :MpptApproach ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "This data praperty descibes several properties of an algorithm performed by the microcontroller associated with the MPPT method. They include initial values, weighted factor(s), mutation equation, factors or parameters, target vector and its conditions." ;
+                     rdfs:label "algorithmInfo" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmPopulationSize
+:algorithmPopulationSize rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :MetaHeuristic ;
+                         rdfs:range xsd:int ;
+                         rdfs:label "algorithmPopulationSize" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithmSearchTechnique
+:algorithmSearchTechnique rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :MpptApproach ;
+                          rdfs:range xsd:string ;
+                          rdfs:comment "What is the algorithm search technique?" ;
+                          rdfs:label "algorithmSearchTechnique" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#averageTemperature
+:averageTemperature rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :ClimateCondition ;
+                    rdfs:range xsd:decimal ;
+                    rdfs:comment "averageTemperature" ;
+                    rdfs:label "averageTemperature" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#bifacial
+:bifacial rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Module ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "PV physical characteristic: bifaciality of the PV module" ;
+          rdfs:label "bifacialModule" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#climateCondition
+:climateCondition rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :ClimateCondition ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "This is to describe how the overall climate or weather condition of the PV project looks like." ;
+                  rdfs:label "climateCondition" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#crossoverRate
+:crossoverRate rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MetaHeuristic ;
+               rdfs:range xsd:decimal ;
+               rdfs:comment "The crossover rate (CR) determined by the user in the same range of [0, 1]." ;
+               rdfs:label "crossoverRate" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#currentAtMpp
+:currentAtMpp rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :PvPerformanceModel ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "PV model parameter: (Imp) current at maximum power point (MPP)" ;
+              rdfs:label "currentAtMpp" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#dataLibrarySource
+:dataLibrarySource rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :DataLibrary ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "The database used for the library, for instance National Solar Radiation Database (NSRDB)." ;
+                   rdfs:label "dataLibrarySourceName" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#dutyCycle
+:dutyCycle rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Mppt_basedController ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "dutyCycle" ;
+           rdfs:label "dutyCycle" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#elevation
+:elevation rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Application ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "elevation" ;
+           rdfs:label "elevation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#fillFactor
+:fillFactor rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Module ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "Fill factor for self-shading related to the PV module." ;
+            rdfs:label "moduleFillFactor" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#globalIrradiance
+:globalIrradiance rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :IrradianceDatabase ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:comment "globalIrradiance" ;
+                  rdfs:label "globalIrradiance" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#handlingNonLinearity
+:handlingNonLinearity rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :MpptApproach ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:label "handlingNonLinearity" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasComplexity
+:hasComplexity rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :MpptApproach ;
+               rdfs:range xsd:string ;
+               rdfs:label "methodComplexity" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasConvergence
+:hasConvergence rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :MpptApproach ;
+                rdfs:range xsd:string ;
+                rdfs:label "methodConvergence" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasCost
+:hasCost rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :MpptApproach ;
+         rdfs:range xsd:string ;
+         rdfs:label "methodCost" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasEfficency
+:hasEfficency rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :MpptApproach ;
+              rdfs:range xsd:string ;
+              rdfs:label "methodEfficency" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasImplementation
+:hasImplementation rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdfs:domain :MpptApproach ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "methodImplementation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#hasOscillationAroundGP
+:hasOscillationAroundGP rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf owl:topDataProperty ;
+                        rdfs:domain :MpptApproach ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:label "hasOscillationAroundGP" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#idealityFactor
+:idealityFactor rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :PvPerformanceModel ;
+                rdfs:range xsd:decimal ;
+                rdfs:comment "PV model parameter: diode ideality factor at reference condition (a)" ;
+                rdfs:label "idealityFactor" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#initialValue
+:initialValue rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :MpptApproach ;
+              rdfs:range xsd:string ;
+              rdfs:comment "This is the initial value for the reference parameter applied to the MPPT algorithm." ;
+              rdfs:label "algorithmInitialValue" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#initiatedParameterValues_Initialization
+:initiatedParameterValues_Initialization rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain :MetaHeuristic ;
+                                         rdfs:range xsd:decimal ;
+                                         rdfs:label "initiatedParameterValues_Initialization" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#inputVariable
+:inputVariable rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Mppt_basedController ;
+               rdfs:range xsd:string ;
+               rdfs:comment "The MPPT-based input variable(s) are sensed by current or voltage sensors (Ipv, Vpv, or Ppv)." ;
+               rdfs:label "controllerInputVariable" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#inverterEfficiency
+:inverterEfficiency rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Inverter ;
+                    rdfs:range xsd:decimal ;
+                    rdfs:label "inverterEfficiency" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#isPvDependent
+:isPvDependent rdf:type owl:DatatypeProperty ;
+               rdfs:domain :MpptApproach ;
+               rdfs:range xsd:boolean ;
+               rdfs:label "isPvDependent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#latitude
+:latitude rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :Application ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "latitude" ;
+          rdfs:label "latitude" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#longitude
+:longitude rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Application ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "longitude" ;
+           rdfs:label "longitude" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#maximumACpower
+:maximumACpower rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Inverter ;
+                rdfs:range xsd:decimal ;
+                rdfs:label "maximumACpower" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#maximumDCcurrent
+:maximumDCcurrent rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Inverter ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:label "maximumDCcurrent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#maximumDCpower
+:maximumDCpower rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Inverter ;
+                rdfs:range xsd:decimal ;
+                rdfs:label "maximumDCpower" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#maximumDCvoltage
+:maximumDCvoltage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Inverter ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:label "maximumDCvoltage" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#maximumMPPTdcVoltage
+:maximumMPPTdcVoltage rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Inverter ;
+                      rdfs:range xsd:decimal ;
+                      rdfs:label "maximumMPPTdcVoltage" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#microcontrollerName
+:microcontrollerName rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Mppt_basedController ;
+                     rdfs:range xsd:string ;
+                     rdfs:comment "This is the name of the microcontroller used in the MPPT-based cotrol circuit." ;
+                     rdfs:label "microcontrollerName" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#minimumMPPTdcVoltage
+:minimumMPPTdcVoltage rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Inverter ;
+                      rdfs:range xsd:decimal ;
+                      rdfs:label "minimumMPPTdcVoltage" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#moduleArea
+:moduleArea rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Module ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "moduleArea" ;
+            rdfs:label "moduleArea" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#moduleBrand
+:moduleBrand rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Module ;
+             rdfs:range xsd:string ;
+             rdfs:comment "PV physical characteristic: name of the module" ;
+             rdfs:label "moduleBrand" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#mpptController
+:mpptController rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Mppt_basedController ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The main technical features and parameters needed for the \"MPPT-basedController\" class are presented here, in addition to the PWM, MCU name, sensor, and input variables." ;
+                rdfs:label "mpptControllerTechnicalFeatures" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#needsPeriodicTunning
+:needsPeriodicTunning rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :MpptApproach ;
+                      rdfs:range xsd:boolean ;
+                      rdfs:label "needsPeriodicTunning" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#nocT
+:nocT rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Module ;
+      rdfs:range xsd:decimal ;
+      rdfs:comment "PV physical characteristic: nominal operating cell temperature (NOCT)" ;
+      rdfs:label "nocT" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#nominalDCvoltage
+:nominalDCvoltage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Inverter ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:label "nominalDCvoltage" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#nominalEfficiency
+:nominalEfficiency rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :Module ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "PV physical characteristic: nominal efficiency of the PV" ;
+                   rdfs:label "moduleNominalEfficiency" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#numberOfCells
+:numberOfCells rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdf:type owl:FunctionalProperty ;
+               rdfs:domain :Module ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "PV physical characteristic: cell numbers of the PV" ;
+               rdfs:label "numberOfCells" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#numberOfMPPTinputs
+:numberOfMPPTinputs rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Inverter ;
+                    rdfs:range xsd:int ;
+                    rdfs:label "numberOfMPPTinputs" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#openCircuitVoltage
+:openCircuitVoltage rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :PvPerformanceModel ;
+                    rdfs:range xsd:decimal ;
+                    rdfs:comment "PV model parameter: (Voc) open circuit voltage" ;
+                    rdfs:label "openCircuitVoltage" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#pWM
+:pWM rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Mppt_basedController ;
+     rdfs:range xsd:decimal ;
+     rdfs:comment "This is the pulse width modulation (PWM) required for the MPPT controller." ;
+     rdfs:label "pWM" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#particleSize
+:particleSize rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Particle ;
+              rdfs:range xsd:decimal ;
+              rdfs:comment "The size of the particle causing partial or uniform shading" ;
+              rdfs:label "particleSize" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#particleWeight
+:particleWeight rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :Particle ;
+                rdfs:range xsd:decimal ;
+                rdfs:comment "The weight of the particle causing partial or uniform shading" ;
+                rdfs:label "particleWeight" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#patternVariation
+:patternVariation rdf:type owl:DatatypeProperty ;
+                  rdfs:subPropertyOf owl:topDataProperty ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :Shading ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "patternVariation" ;
+                  rdfs:label "patternVariation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#planningToolName
+:planningToolName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :PlanningTool ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "planningToolName" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#powerAtMpp
+:powerAtMpp rdf:type owl:DatatypeProperty ;
+            rdfs:domain :PvPerformanceModel ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "PV model parameter: (Pmp) maximum power at maximum power point (MPP)" ;
+            rdfs:label "powerAtMpp" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#powerConsumptionDuringOperation
+:powerConsumptionDuringOperation rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :Inverter ;
+                                 rdfs:range xsd:decimal ;
+                                 rdfs:comment "Inverter power consumption during operation (Wdc)" ;
+                                 rdfs:label "powerConsumptionDuringOperation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#power_ConsumptionAtNight
+:power_ConsumptionAtNight rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Inverter ;
+                          rdfs:range xsd:decimal ;
+                          rdfs:comment "Inverter power consumption at night (Wac)" ;
+                          rdfs:label "powerConsumptionAtNight" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#pvCurrent
+:pvCurrent rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :PvPerformanceModel ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "PV model parameter: phtocurrent at reference condition (Il or Ipv)" ;
+           rdfs:label "pvCurrent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#realTimeResponse
+:realTimeResponse rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :MpptApproach ;
+                  rdfs:range xsd:boolean ;
+                  rdfs:label "hasRealTimeResponse" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#referenceParameter
+:referenceParameter rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf owl:topDataProperty ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :MpptApproach ;
+                    rdfs:range xsd:string ;
+                    rdfs:comment "This is the parameter that the algorithm refers to. It  could be the current, voltage, power, or duty cycle." ;
+                    rdfs:label "algorithmReferenceParameter" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#saturationCurrent
+:saturationCurrent rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :PvPerformanceModel ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "PV model parameter: reverse saturation current at reference condition (I0)" ;
+                   rdfs:label "saturationCurrent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#scalingFactor_Mutation
+:scalingFactor_Mutation rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :MetaHeuristic ;
+                        rdfs:range xsd:decimal ;
+                        rdfs:comment "The weighted factor, called mutation scaling factor F, chosen from the range [0, 1]." ;
+                        rdfs:label "scalingFactor_Mutation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#sensor
+:sensor rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdf:type owl:FunctionalProperty ;
+        rdfs:domain :Mppt_basedController ;
+        rdfs:range xsd:string ;
+        rdfs:comment "The current or voltage sensor or both which are employed for measuring initial voltage and/or current values used for the regulation circuit in the MPPT controller." ;
+        rdfs:label "sensor" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingConditions
+:shadingConditions rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Condition ;
+                   rdfs:range xsd:boolean ;
+                   rdfs:label "shadingCondition" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingPattern
+:shadingPattern rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Shading ;
+                rdfs:range xsd:decimal ;
+                rdfs:label "shadingPattern" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingSource
+:shadingSource rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Source ;
+               rdfs:range xsd:string ;
+               rdfs:label "shadingSource" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shortCircuitCurrent
+:shortCircuitCurrent rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdf:type owl:FunctionalProperty ;
+                     rdfs:domain :PvPerformanceModel ;
+                     rdfs:range xsd:decimal ;
+                     rdfs:comment "PV model parameter: short circuit current (Isc)" ;
+                     rdfs:label "shortCircuitCurrent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#simulationInputs
+:simulationInputs rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Simulation ;
+                  rdfs:range xsd:string ;
+                  rdfs:label "simulationInputs" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#simulationTool
+:simulationTool rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Simulation ;
+                rdfs:range xsd:string ;
+                rdfs:label "simulationToolName" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#snowFalls
+:snowFalls rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :ClimateCondition ;
+           rdfs:range xsd:decimal ;
+           rdfs:label "snowFalls" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#targetVector_Initialization
+:targetVector_Initialization rdf:type owl:DatatypeProperty ;
+                             rdfs:domain :MetaHeuristic ;
+                             rdfs:range xsd:string ;
+                             rdfs:comment "An initial population utilizes NAn initial population utilizes NP D-dimensional parameter vectors chosen randomly presenting real values of the entire parameters." ;
+                             rdfs:label "targetVector_Initialization" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#temperatureCoefficients
+:temperatureCoefficients rdf:type owl:DatatypeProperty ;
+                         rdfs:subPropertyOf owl:topDataProperty ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :Module ;
+                         rdfs:range xsd:decimal ;
+                         rdfs:comment "PV physical characteristic: temperature coefficients (w/celsius) for Pmp, Voc, and Isc" ;
+                         rdfs:label "temperatureCoefficients" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#trackingGP
+:trackingGP rdf:type owl:DatatypeProperty ;
+            rdfs:domain :MpptApproach ;
+            rdfs:range xsd:boolean ;
+            rdfs:label "trackingGP" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#voltageAtMaxPower
+:voltageAtMaxPower rdf:type owl:DatatypeProperty ;
+                   rdfs:subPropertyOf owl:topDataProperty ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :PvPerformanceModel ;
+                   rdfs:range xsd:decimal ;
+                   rdfs:comment "PV model parameter: (Vmp) voltage at maximum power point (MPP)" ;
+                   rdfs:label "voltageAtMaxPower" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#NominalACvoltage_(Vac)
+<http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#NominalACvoltage_(Vac)> rdf:type owl:DatatypeProperty ;
+                                                                                                  rdfs:domain :Inverter ;
+                                                                                                  rdfs:range xsd:decimal ;
+                                                                                                  rdfs:label "nominalACvoltage" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ABC
+:ABC rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This method is based on the Artificial bee colony (ABC) algorithm." ;
+     rdfs:label "ABC" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ACO
+:ACO rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This is the Ant Colony Optimization (ACO)." ;
+     rdfs:label "ACO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#AFSA
+:AFSA rdf:type owl:Class ;
+      rdfs:subClassOf :SwarmIntelligence ;
+      rdfs:comment "This is a method based on the Artificial Fish-Swarm Algorithm (AFSA) algorithm." ;
+      rdfs:label "AFSA" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#AI_Based
+:AI_Based rdf:type owl:Class ;
+          rdfs:subClassOf :IntelligentTechnique ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCharacteristic ;
+                            owl:someValuesFrom :Cost
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCharacteristic ;
+                            owl:someValuesFrom :PV_Dependent
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :hasCharacteristic ;
+                            owl:someValuesFrom :PeriodicTuning
+                          ] ;
+          owl:disjointWith :MetaHeuristic ;
+          rdfs:comment "These methods are categorized under Artificial Intelligence group." ;
+          rdfs:label "AI_Based" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ANFIS
+:ANFIS rdf:type owl:Class ;
+       rdfs:subClassOf :AI_Based ;
+       rdfs:comment "This is the Adaptive neuro-fuzzy inference System (ANFIS). Regardless of its hybrid characteristic, it is categorized into a seperate cluster in most articles." ;
+       rdfs:label "ANFIS" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ANN
+:ANN rdf:type owl:Class ;
+     rdfs:subClassOf :AI_Based ;
+     rdfs:comment "This is the Artificial Neural Network (ANN) method." ;
+     rdfs:label "ANN" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#AdhessiveResidues
+:AdhessiveResidues rdf:type owl:Class ;
+                   rdfs:subClassOf :Glazing ;
+                   rdfs:label "AdhessiveResidues" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#AdjacentStructure
+:AdjacentStructure rdf:type owl:Class ;
+                   rdfs:subClassOf :Source ;
+                   rdfs:label "AdjacentStructure" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#AirCondition
+:AirCondition rdf:type owl:Class ;
+              rdfs:subClassOf :Environment ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :affects ;
+                                owl:someValuesFrom [ owl:intersectionOf ( :Condition
+                                                                          :Effect
+                                                                          :Particle
+                                                                          :Severity
+                                                                        ) ;
+                                                     rdf:type owl:Class
+                                                   ]
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :needs ;
+                                owl:someValuesFrom :PollutionDatabase
+                              ] ;
+              rdfs:label "AirCondition" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#AmbientCondition
+:AmbientCondition rdf:type owl:Class ;
+                  rdfs:subClassOf :Planning ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :affects ;
+                                    owl:someValuesFrom :PowerEstimations
+                                  ] ;
+                  rdfs:label "AmbientCondition" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Amorphous
+:Amorphous rdf:type owl:Class ;
+           rdfs:subClassOf :PvTechnology ;
+           rdfs:label "Amorphous" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Application
+:Application rdf:type owl:Class ;
+             rdfs:subClassOf :Planning ;
+             rdfs:comment "A planning a project is equivalent to these set of instances." ;
+             rdfs:label "Application" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#BA
+:BA rdf:type owl:Class ;
+    rdfs:subClassOf :SwarmIntelligence ;
+    rdfs:comment "This is the Bat-inspired Algorithm (BA) method." ;
+    rdfs:label "BA" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#BatteryCharger
+:BatteryCharger rdf:type owl:Class ;
+                rdfs:subClassOf :Application ;
+                rdfs:label "BatteryCharger" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Bayesian
+:Bayesian rdf:type owl:Class ;
+          rdfs:subClassOf :EvolutionaryAlgorithm ;
+          rdfs:comment "This method is based on the Bayesian Network optimization method." ;
+          rdfs:label "Bayesian" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#BetaMethod
+:BetaMethod rdf:type owl:Class ;
+            rdfs:subClassOf :ConventionalMethod ,
+                            [ rdf:type owl:Class ;
+                              owl:complementOf [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacteristic ;
+                                                 owl:someValuesFrom :PV_Dependent
+                                               ]
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasCharacteristic ;
+                              owl:someValuesFrom :Convergence
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasCharacteristic ;
+                              owl:someValuesFrom :Efficency
+                            ] ;
+            rdfs:comment "This is the Beta-method method." ;
+            rdfs:label "BetaMethod" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#BiSectionSearch
+:BiSectionSearch rdf:type owl:Class ;
+                 rdfs:subClassOf :ConventionalMethod ,
+                                 [ rdf:type owl:Class ;
+                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasCharacteristic ;
+                                                      owl:someValuesFrom :Complexity
+                                                    ]
+                                 ] ,
+                                 [ rdf:type owl:Class ;
+                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasCharacteristic ;
+                                                      owl:someValuesFrom :Cost
+                                                    ]
+                                 ] ,
+                                 [ rdf:type owl:Class ;
+                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasCharacteristic ;
+                                                      owl:someValuesFrom :Efficency
+                                                    ]
+                                 ] ,
+                                 [ rdf:type owl:Class ;
+                                   owl:complementOf [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :hasCharacteristic ;
+                                                      owl:someValuesFrom :PV_Dependent
+                                                    ]
+                                 ] ;
+                 rdfs:comment "This is the Bisection Search method." ;
+                 rdfs:label "BiSectionSearch" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Biological
+:Biological rdf:type owl:Class ;
+            rdfs:subClassOf :Effect ;
+            rdfs:label "Biological" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#BirdDropping
+:BirdDropping rdf:type owl:Class ;
+              rdfs:subClassOf :Source ;
+              rdfs:label "BirdDropping" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Building
+:Building rdf:type owl:Class ;
+          rdfs:subClassOf :Source ;
+          rdfs:label "Building" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#BypassDiode
+:BypassDiode rdf:type owl:Class ;
+             rdfs:subClassOf :PE_BasedMethod ;
+             rdfs:comment "In a PV system using Module Integrated Converters (MIC), a voltage shortage is detected whenever the bypass diode is active showing shading conditions." ;
+             rdfs:label "BypassDiode" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#CS
+:CS rdf:type owl:Class ;
+    rdfs:subClassOf :SwarmIntelligence ;
+    rdfs:comment "This method is based on the Cuckoo Search (CS) algorithm." ;
+    rdfs:label "CS" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#CalciumCarbonate
+:CalciumCarbonate rdf:type owl:Class ;
+                  rdfs:subClassOf :Particle ;
+                  rdfs:label "CalciumCarbonate" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Chemical
+:Chemical rdf:type owl:Class ;
+          rdfs:subClassOf :Effect ;
+          rdfs:label "Chemical" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#CleanAir
+:CleanAir rdf:type owl:Class ;
+          rdfs:subClassOf :AirCondition ;
+          owl:disjointWith :Polluted ;
+          rdfs:label "CleanAir" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ClimateCondition
+:ClimateCondition rdf:type owl:Class ;
+                  rdfs:subClassOf :Environment ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :affects ;
+                                    owl:someValuesFrom [ owl:intersectionOf ( :Condition
+                                                                              :Effect
+                                                                              :Particle
+                                                                              :Severity
+                                                                            ) ;
+                                                         rdf:type owl:Class
+                                                       ]
+                                  ] ;
+                  rdfs:label "ClimateCondition" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Cloud
+:Cloud rdf:type owl:Class ;
+       rdfs:subClassOf :Source ;
+       rdfs:label "Climate" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#CloudDatabase
+:CloudDatabase rdf:type owl:Class ;
+               rdfs:subClassOf :DataLibrary ;
+               rdfs:label "CloudDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Cloudy
+:Cloudy rdf:type owl:Class ;
+        rdfs:subClassOf :ClimateCondition ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :needs ;
+                          owl:someValuesFrom :CloudDatabase
+                        ] ;
+        rdfs:label "Cloudy" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Commercial
+:Commercial rdf:type owl:Class ;
+            rdfs:subClassOf :Application ;
+            rdfs:label "Commercial" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Complexity
+:Complexity rdf:type owl:Class ;
+            rdfs:subClassOf :MethodCharacteristic ;
+            rdfs:label "Complexity" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Condition
+:Condition rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :PSC
+                                               :USC
+                                             )
+                               ] ;
+           rdfs:subClassOf :Shading ;
+           rdfs:label "ShadingCondition" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ConventionalMethod
+:ConventionalMethod rdf:type owl:Class ;
+                    rdfs:subClassOf :MpptApproach ,
+                                    [ rdf:type owl:Class ;
+                                      owl:complementOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :canDealWith ;
+                                                         owl:someValuesFrom :AmbientCondition
+                                                       ]
+                                    ] ;
+                    rdfs:comment "Conventional maximum power point tracking (MPPT) methods are considered as non-softcomputing methods." ;
+                    rdfs:label "Conventional" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Convergence
+:Convergence rdf:type owl:Class ;
+             rdfs:subClassOf :MethodCharacteristic ;
+             rdfs:label "Convergence" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Cost
+:Cost rdf:type owl:Class ;
+      rdfs:subClassOf :MethodCharacteristic ;
+      rdfs:label "Cost" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DE
+:DE rdf:type owl:Class ;
+    rdfs:subClassOf :EvolutionaryAlgorithm ;
+    owl:disjointWith :GA ;
+    rdfs:comment "This method is the Differential Evolution (DE) technique." ;
+    rdfs:label "DE" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DE_ANN
+:DE_ANN rdf:type owl:Class ;
+        rdfs:subClassOf :HybridMethod ,
+                        [ rdf:type owl:Class ;
+                          owl:complementOf [ rdf:type owl:Restriction ;
+                                             owl:onProperty :hasCharacteristic ;
+                                             owl:someValuesFrom :PV_Dependent
+                                           ]
+                        ] ;
+        rdfs:label "DE_ANN" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DE_Fuzzy
+:DE_Fuzzy rdf:type owl:Class ;
+          rdfs:subClassOf :HybridMethod ,
+                          [ rdf:type owl:Class ;
+                            owl:complementOf [ rdf:type owl:Restriction ;
+                                               owl:onProperty :hasCharacteristic ;
+                                               owl:someValuesFrom :PV_Dependent
+                                             ]
+                          ] ;
+          rdfs:label "DE_Fuzzy" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DE_GWO
+:DE_GWO rdf:type owl:Class ;
+        rdfs:subClassOf :HybridMethod ;
+        rdfs:label "DE_GWO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DE_PSO
+:DE_PSO rdf:type owl:Class ;
+        rdfs:subClassOf :HybridMethod ;
+        rdfs:label "DE_PSO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DPO
+:DPO rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This the Dolphin Partner Optimization (DPO) method." ;
+     rdfs:label "DPO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DataLibrary
+:DataLibrary rdf:type owl:Class ;
+             rdfs:subClassOf :Planning ;
+             rdfs:label "DataLibrary" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#DetailedModel
+:DetailedModel rdf:type owl:Class ;
+               rdfs:subClassOf :PvPerformanceModel ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :canDealWith ;
+                                 owl:someValuesFrom :AmbientCondition
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCharacteristic ;
+                                 owl:someValuesFrom :Reliability
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :isReliable ;
+                                 owl:someValuesFrom :PowerEstimations
+                               ] ;
+               owl:disjointWith :SimpleModel ;
+               rdfs:comment "DetailedModel is equivalent to a set of performance model including single-diode Rs and Rp and two-diode and three-diode models." ;
+               rdfs:label "DetailedModel" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Drought
+:Drought rdf:type owl:Class ;
+         rdfs:subClassOf :ClimateCondition ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :needs ;
+                           owl:someValuesFrom :TemperatureDatabase
+                         ] ;
+         rdfs:label "Drought" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Dust
+:Dust rdf:type owl:Class ;
+      rdfs:subClassOf :Particle ;
+      rdfs:label "Dust" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Effect
+:Effect rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :Biological
+                                            :Chemical
+                                            :Electrostatic
+                                          )
+                            ] ;
+        rdfs:subClassOf :Shading ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :affects ;
+                          owl:someValuesFrom :Severity
+                        ] ;
+        rdfs:label "ShadingEffect" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Effectiveness
+:Effectiveness rdf:type owl:Class ;
+               rdfs:subClassOf :Evaluation ;
+               rdfs:label "Effectiveness" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Efficency
+:Efficency rdf:type owl:Class ;
+           rdfs:subClassOf :MethodCharacteristic ;
+           rdfs:label "Efficiency" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Electrostatic
+:Electrostatic rdf:type owl:Class ;
+               rdfs:subClassOf :Effect ;
+               rdfs:label "Electrostatic" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#EnhancedBayesian
+:EnhancedBayesian rdf:type owl:Class ;
+                  rdfs:subClassOf :HybridMethod ;
+                  rdfs:label "EnhancedBayesian" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Environment
+:Environment rdf:type owl:Class ;
+             rdfs:subClassOf :AmbientCondition ;
+             rdfs:label "Environment" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#EsControl
+:EsControl rdf:type owl:Class ;
+           rdfs:subClassOf :ConventionalMethod ,
+                           [ rdf:type owl:Class ;
+                             owl:complementOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasCharacteristic ;
+                                                owl:someValuesFrom :Cost
+                                              ]
+                           ] ,
+                           [ rdf:type owl:Class ;
+                             owl:complementOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasCharacteristic ;
+                                                owl:someValuesFrom :PV_Dependent
+                                              ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Convergence
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Efficency
+                           ] ;
+           rdfs:comment "This is the Extremum Seeking (ES) control method." ;
+           rdfs:label "EsControl" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Evaluation
+:Evaluation rdf:type owl:Class ;
+            rdfs:label "Evaluation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#EvolutionaryAlgorithm
+:EvolutionaryAlgorithm rdf:type owl:Class ;
+                       rdfs:subClassOf :MetaHeuristic ;
+                       owl:disjointWith :SwarmIntelligence ;
+                       rdfs:comment "The Evolutionary Algorithms (EAs) are based on evolutionary concept in nature." ;
+                       rdfs:label "EvolutionaryAlgorithm" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#FL
+:FL rdf:type owl:Class ;
+    rdfs:subClassOf :AI_Based ;
+    rdfs:comment "This method is the Fuzzy Logic method." ;
+    rdfs:label "FL" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#FOA
+:FOA rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This method is based on the Fruit fly Optimization Algorithm (FOA) algorithm." ;
+     rdfs:label "FOA" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Flat
+:Flat rdf:type owl:Class ;
+      rdfs:subClassOf :TiltAngle ;
+      owl:disjointWith :Inclined ;
+      rdfs:label "Thermal" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#FlyAsh
+:FlyAsh rdf:type owl:Class ;
+        rdfs:subClassOf :Particle ;
+        rdfs:label "FlyAsh" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#FlyingObject
+:FlyingObject rdf:type owl:Class ;
+              rdfs:subClassOf :Source ;
+              rdfs:label "FlyingObject" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#FractionalOcv
+:FractionalOcv rdf:type owl:Class ;
+               rdfs:subClassOf :ConventionalMethod ,
+                               [ rdf:type owl:Class ;
+                                 owl:complementOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasCharacteristic ;
+                                                    owl:someValuesFrom :Cost
+                                                  ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCharacteristic ;
+                                 owl:someValuesFrom :PV_Dependent
+                               ] ;
+               rdfs:comment "This is the Fractional Open-circuit Voltage method." ;
+               rdfs:label "FractionalOcv" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#FractionalScc
+:FractionalScc rdf:type owl:Class ;
+               rdfs:subClassOf :ConventionalMethod ,
+                               [ rdf:type owl:Class ;
+                                 owl:complementOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasCharacteristic ;
+                                                    owl:someValuesFrom :Cost
+                                                  ]
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasCharacteristic ;
+                                 owl:someValuesFrom :PV_Dependent
+                               ] ;
+               rdfs:comment "This is the Fractional Short-circuit Current method." ;
+               rdfs:label "FractionalScc" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Freezing
+:Freezing rdf:type owl:Class ;
+          rdfs:subClassOf :ClimateCondition ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :needs ;
+                            owl:someValuesFrom :TemperatureDatabase
+                          ] ;
+          rdfs:label "Freezing" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Furry
+:Furry rdf:type owl:Class ;
+       rdfs:subClassOf :Glazing ;
+       rdfs:label "Furry" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#GA
+:GA rdf:type owl:Class ;
+    rdfs:subClassOf :EvolutionaryAlgorithm ;
+    rdfs:comment "This method is the Generic Algorithm (GA)." ;
+    rdfs:label "GA" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#GWO
+:GWO rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This is the Gray Wolf Optimizer (GWO) method." ;
+     rdfs:label "GWO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Glazing
+:Glazing rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Class ;
+                               owl:unionOf ( :AdhessiveResidues
+                                             :Furry
+                                             :Rough
+                                             :Smooth
+                                             :Sticky
+                                           )
+                             ] ;
+         rdfs:subClassOf :PvType ;
+         rdfs:label "Glazing" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#GridConnected
+:GridConnected rdf:type owl:Class ;
+               rdfs:subClassOf :Application ;
+               rdfs:label "GridConnected" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#HC
+:HC rdf:type owl:Class ;
+    rdfs:subClassOf :ConventionalMethod ,
+                    [ rdf:type owl:Class ;
+                      owl:complementOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasCharacteristic ;
+                                         owl:someValuesFrom :Cost
+                                       ]
+                    ] ,
+                    [ rdf:type owl:Class ;
+                      owl:complementOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasCharacteristic ;
+                                         owl:someValuesFrom :PV_Dependent
+                                       ]
+                    ] ;
+    rdfs:comment "This is the Hill Clmbing method." ;
+    rdfs:label "HC" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#HandlingNonLinearity
+:HandlingNonLinearity rdf:type owl:Class ;
+                      rdfs:subClassOf :MethodCharacteristic ;
+                      rdfs:label "NonLinearity" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Humid
+:Humid rdf:type owl:Class ;
+       rdfs:subClassOf :ClimateCondition ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :needs ;
+                         owl:someValuesFrom :HumidityDatabase
+                       ] ;
+       rdfs:label "Humid" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#HumidityDatabase
+:HumidityDatabase rdf:type owl:Class ;
+                  rdfs:subClassOf :DataLibrary ;
+                  rdfs:label "HumidityDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#HybridMethod
+:HybridMethod rdf:type owl:Class ;
+              rdfs:subClassOf :MpptApproach ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :canDealWith ;
+                                owl:someValuesFrom :AmbientCondition
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasCharacteristic ;
+                                owl:someValuesFrom :Complexity
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasCharacteristic ;
+                                owl:someValuesFrom :Convergence
+                              ] ;
+              rdfs:comment "These methods are usually hybridized two different methods or manupulate one method to create a new approach." ;
+              rdfs:label "Hybrid" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#IC
+:IC rdf:type owl:Class ;
+    rdfs:subClassOf :ConventionalMethod ,
+                    [ rdf:type owl:Class ;
+                      owl:complementOf [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasCharacteristic ;
+                                         owl:someValuesFrom :PV_Dependent
+                                       ]
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :hasCharacteristic ;
+                      owl:someValuesFrom :Efficency
+                    ] ;
+    rdfs:comment "This is the Incremental Conductance method." ;
+    rdfs:label "IC" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Ice
+:Ice rdf:type owl:Class ;
+     rdfs:subClassOf :Particle ;
+     rdfs:label "Ice" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#IcePillar
+:IcePillar rdf:type owl:Class ;
+           rdfs:subClassOf :Particle ;
+           rdfs:label "IcePillar" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#IdealDiode
+:IdealDiode rdf:type owl:Class ;
+            rdfs:subClassOf :SimpleModel ;
+            owl:disjointWith :PvWatts ;
+            rdfs:label "IdealDiode" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Implementation
+:Implementation rdf:type owl:Class ;
+                rdfs:subClassOf :MethodCharacteristic ;
+                rdfs:label "Implementation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ImprovedDE
+:ImprovedDE rdf:type owl:Class ;
+            rdfs:subClassOf :HybridMethod ;
+            rdfs:label "ImprovedDE" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Inclined
+:Inclined rdf:type owl:Class ;
+          rdfs:subClassOf :TiltAngle ;
+          rdfs:label "Inclined" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Industry
+:Industry rdf:type owl:Class ;
+          rdfs:subClassOf :Source ;
+          rdfs:label "Industry" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#IntelligentTechnique
+:IntelligentTechnique rdf:type owl:Class ;
+                      rdfs:subClassOf :MpptApproach ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :canDealWith ;
+                                        owl:someValuesFrom :AmbientCondition
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasCharacteristic ;
+                                        owl:someValuesFrom :Complexity
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasCharacteristic ;
+                                        owl:someValuesFrom :Convergence
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasCharacteristic ;
+                                        owl:someValuesFrom :Efficency
+                                      ] ;
+                      rdfs:comment "These methods represent computer-based maximum power point tracking (MPPT) methods." ;
+                      rdfs:label "Intelligent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Intense
+:Intense rdf:type owl:Class ;
+         rdfs:subClassOf :Severity ;
+         owl:disjointWith :Light ;
+         rdfs:label "Intense" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Inverter
+:Inverter rdf:type owl:Class ;
+          rdfs:subClassOf :SystemDesigned ;
+          owl:disjointWith :Module ;
+          rdfs:label "Inverter" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#IrradianceDatabase
+:IrradianceDatabase rdf:type owl:Class ;
+                    rdfs:subClassOf :DataLibrary ;
+                    rdfs:label "IrradianceDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#KH
+:KH rdf:type owl:Class ;
+    rdfs:subClassOf :SwarmIntelligence ;
+    rdfs:comment "This is the Krill Herd (KH) method." ;
+    rdfs:label "KH" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Layout
+:Layout rdf:type owl:Class ;
+        rdfs:subClassOf :SystemDesigned ;
+        rdfs:comment "The PV arrays and subarrays layout and shading (3D or 2D) map." ;
+        rdfs:label "PvsLayout" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Light
+:Light rdf:type owl:Class ;
+       rdfs:subClassOf :Severity ;
+       rdfs:label "Light" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#LoadCVmax
+:LoadCVmax rdf:type owl:Class ;
+           rdfs:subClassOf :ConventionalMethod ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Complexity
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Convergence
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Cost
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Efficency
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :PV_Dependent
+                           ] ;
+           rdfs:comment "This is the Load Current/Voltage Maximization method." ;
+           rdfs:label "LoadCVmax" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MBO
+:MBO rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This method is based on the Marriage in Honey Bees Algorithm (MBO)." ;
+     rdfs:label "MBO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MCU_Based
+:MCU_Based rdf:type owl:Class ;
+           rdfs:subClassOf :PE_BasedMethod ;
+           rdfs:comment "This is an Microcontroller (MCU) base method." ;
+           rdfs:label "MCU_Based" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MS
+:MS rdf:type owl:Class ;
+    rdfs:subClassOf :SwarmIntelligence ;
+    rdfs:comment "This the method, Monkey Search (MS)." ;
+    rdfs:label "MS" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MetaHeuristic
+:MetaHeuristic rdf:type owl:Class ;
+               rdfs:subClassOf :IntelligentTechnique ,
+                               [ rdf:type owl:Class ;
+                                 owl:complementOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasCharacteristic ;
+                                                    owl:someValuesFrom :PV_Dependent
+                                                  ]
+                               ] ;
+               rdfs:comment "These metaheuristic techniques performes optimization methods using a set of solutions (population)." ;
+               rdfs:label "MetaHeuristic" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MethodCharacteristic
+:MethodCharacteristic rdf:type owl:Class ;
+                      rdfs:subClassOf :Mppt ;
+                      rdfs:comment "Characteristics of an MPPT method is presented" ;
+                      rdfs:label "Characteristic" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Modeling
+:Modeling rdf:type owl:Class ;
+          rdfs:label "Modeling" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Module
+:Module rdf:type owl:Class ;
+        rdfs:subClassOf :SystemDesigned ;
+        rdfs:label "Module" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MonoCrystalline
+:MonoCrystalline rdf:type owl:Class ;
+                 rdfs:subClassOf :PvTechnology ;
+                 rdfs:label "Amorphous" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Mppt
+:Mppt rdf:type owl:Class ;
+      rdfs:label "Mppt" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#MpptApproach
+:MpptApproach rdf:type owl:Class ;
+              rdfs:subClassOf :Mppt ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasCharacteristic ;
+                                owl:someValuesFrom :MethodCharacteristic
+                              ] ;
+              rdfs:comment "Maximum power point tracking (MPPT) approaches are categorized in the subclasses." ;
+              rdfs:label "Method" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Mppt_basedController
+:Mppt_basedController rdf:type owl:Class ;
+                      rdfs:subClassOf :Mppt ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasCharacteristic ;
+                                        owl:someValuesFrom :algorithm
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :needs ;
+                                        owl:someValuesFrom :Simulation
+                                      ] ;
+                      rdfs:label "Mppt_basedController" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#OscillationAroundGP
+:OscillationAroundGP rdf:type owl:Class ;
+                     rdfs:subClassOf :MethodCharacteristic ;
+                     rdfs:label "OscillationAroundGP" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PE_BasedMethod
+:PE_BasedMethod rdf:type owl:Class ;
+                rdfs:subClassOf :MpptApproach ,
+                                [ rdf:type owl:Class ;
+                                  owl:complementOf [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasCharacteristic ;
+                                                     owl:someValuesFrom :Cost
+                                                   ]
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :canDealWith ;
+                                  owl:someValuesFrom :AmbientCondition
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :hasCharacteristic ;
+                                  owl:someValuesFrom :Efficency
+                                ] ;
+                rdfs:comment "These Power Electronics (PE) maximum power point tracking (MPPT) methods are based on a PV system configuration and components of the system." ;
+                rdfs:label "PE_Base" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PE_qualizer
+:PE_qualizer rdf:type owl:Class ;
+             rdfs:subClassOf :PE_BasedMethod ;
+             rdfs:comment "Power Independence Principle (PIP) defines a topology in which series connected cells can be operated with different voltages and currents. PE equalizer establishes an equivalent power throughout the PV modules either shaded or non-shaded by sharing the power between these PVs." ;
+             rdfs:label "PE_qualizer" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PSC
+:PSC rdf:type owl:Class ;
+     rdfs:subClassOf :Condition ;
+     owl:disjointWith :USC ;
+     rdfs:label "PSC" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PSO
+:PSO rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This is the Particle Swarm Optimization (PSO)" ;
+     rdfs:label "PSO" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PSO_ANN
+:PSO_ANN rdf:type owl:Class ;
+         rdfs:subClassOf :HybridMethod ,
+                         [ rdf:type owl:Class ;
+                           owl:complementOf [ rdf:type owl:Restriction ;
+                                              owl:onProperty :hasCharacteristic ;
+                                              owl:someValuesFrom :PV_Dependent
+                                            ]
+                         ] ;
+         rdfs:label "PSO_ANN" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PVDatabase
+:PVDatabase rdf:type owl:Class ;
+            rdfs:subClassOf :DataLibrary ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :hasCharacteristic ;
+                              owl:someValuesFrom :PvType
+                            ] ;
+            rdfs:label "PvDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PV_Dependent
+:PV_Dependent rdf:type owl:Class ;
+              rdfs:subClassOf :MethodCharacteristic ;
+              rdfs:label "PvDependent" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Particle
+:Particle rdf:type owl:Class ;
+          rdfs:subClassOf :Shading ;
+          rdfs:label "Particle" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PeriodicTuning
+:PeriodicTuning rdf:type owl:Class ;
+                rdfs:subClassOf :MethodCharacteristic ;
+                rdfs:label "PeriodicTunning" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Planning
+:Planning rdf:type owl:Class ;
+          rdfs:label "Planning" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PlanningTool
+:PlanningTool rdf:type owl:Class ;
+              rdfs:subClassOf :Planning ;
+              rdfs:label "PlanningTool" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Polluted
+:Polluted rdf:type owl:Class ;
+          rdfs:subClassOf :AirCondition ;
+          rdfs:label "Polluted" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Pollution
+:Pollution rdf:type owl:Class ;
+           rdfs:subClassOf :Source ;
+           rdfs:label "Pollution" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PollutionDatabase
+:PollutionDatabase rdf:type owl:Class ;
+                   rdfs:subClassOf :DataLibrary ;
+                   rdfs:label "PollutionDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PolyCrystalline
+:PolyCrystalline rdf:type owl:Class ;
+                 rdfs:subClassOf :PvTechnology ;
+                 rdfs:label "PolyCrystalline" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PowerEstimations
+:PowerEstimations rdf:type owl:Class ;
+                  rdfs:subClassOf :Planning ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :needs ;
+                                    owl:someValuesFrom :Reliability
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isReliable ;
+                                    owl:allValuesFrom :DetailedModel
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :isReliable ;
+                                    owl:allValuesFrom [ owl:intersectionOf ( :CloudDatabase
+                                                                             :PollutionDatabase
+                                                                             :SnowDatabase
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ]
+                                  ] ;
+                  rdfs:comment "Calculated power output by the planning tool" ;
+                  rdfs:label "PowerEstimation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PowerPlant
+:PowerPlant rdf:type owl:Class ;
+            rdfs:subClassOf :Application ;
+            rdfs:label "PowerPlant" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PvPerformanceModel
+:PvPerformanceModel rdf:type owl:Class ;
+                    rdfs:subClassOf :Planning ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :affects ;
+                                      owl:someValuesFrom :PowerEstimations
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :needs ;
+                                      owl:someValuesFrom :Simulation
+                                    ] ;
+                    rdfs:comment "The PV Performance Model class is equivalent to any PV_detailed model or simple model." ;
+                    rdfs:label "PvPerformanceModel" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PvTechnology
+:PvTechnology rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Class ;
+                                    owl:unionOf ( :Amorphous
+                                                  :MonoCrystalline
+                                                  :PolyCrystalline
+                                                  :Thermal
+                                                )
+                                  ] ;
+              rdfs:subClassOf :PvType ;
+              rdfs:label "PvTechnology" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PvType
+:PvType rdf:type owl:Class ;
+        rdfs:subClassOf :Planning ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :affects ;
+                          owl:someValuesFrom :Shading
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDatabase ;
+                          owl:someValuesFrom :PVDatabase
+                        ] ;
+        rdfs:label "PvType" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#PvWatts
+:PvWatts rdf:type owl:Class ;
+         rdfs:subClassOf :SimpleModel ;
+         rdfs:label "PvWatts" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Rainy
+:Rainy rdf:type owl:Class ;
+       rdfs:subClassOf :ClimateCondition ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :needs ;
+                         owl:someValuesFrom :CloudDatabase
+                       ] ;
+       rdfs:label "Rainy" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#RcControl
+:RcControl rdf:type owl:Class ;
+           rdfs:subClassOf :ConventionalMethod ,
+                           [ rdf:type owl:Class ;
+                             owl:complementOf [ rdf:type owl:Restriction ;
+                                                owl:onProperty :hasCharacteristic ;
+                                                owl:someValuesFrom :PV_Dependent
+                                              ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Complexity
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Convergence
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Cost
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasCharacteristic ;
+                             owl:someValuesFrom :Efficency
+                           ] ;
+           rdfs:comment "This is the Ripple Correlation Control method." ;
+           rdfs:label "RcControl" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#RealTimeResponse
+:RealTimeResponse rdf:type owl:Class ;
+                  rdfs:subClassOf :MethodCharacteristic ;
+                  rdfs:label "RealTimeResponse" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#RedSoil
+:RedSoil rdf:type owl:Class ;
+         rdfs:subClassOf :Particle ;
+         rdfs:label "RedSoil" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Reliability
+:Reliability rdf:type owl:Class ;
+             rdfs:subClassOf :Evaluation ;
+             rdfs:label "Reliability" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Residential
+:Residential rdf:type owl:Class ;
+             rdfs:subClassOf :Application ;
+             rdfs:label "Residential" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Rough
+:Rough rdf:type owl:Class ;
+       rdfs:subClassOf :Glazing .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Sand
+:Sand rdf:type owl:Class ;
+      rdfs:subClassOf :Particle ;
+      rdfs:label "Sand" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SelfShading
+:SelfShading rdf:type owl:Class ;
+             rdfs:subClassOf :Source ;
+             rdfs:comment "Self-shading applies to the fixed open rack and 1-axis tracking array types and diffuse shading." ;
+             rdfs:label "SelfShading" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Severity
+:Severity rdf:type owl:Class ;
+          owl:equivalentClass [ owl:intersectionOf ( :Shading
+                                                     [ rdf:type owl:Class ;
+                                                       owl:unionOf ( :Intense
+                                                                     :Light
+                                                                   )
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+          rdfs:subClassOf :Shading ;
+          rdfs:label "ShadingSeverity" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Shading
+:Shading rdf:type owl:Class ;
+         rdfs:subClassOf :AmbientCondition ;
+         rdfs:label "Shading" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Silica
+:Silica rdf:type owl:Class ;
+        rdfs:subClassOf :Particle ;
+        rdfs:label "Silica" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SimpleModel
+:SimpleModel rdf:type owl:Class ;
+             rdfs:subClassOf :PvPerformanceModel ,
+                             [ rdf:type owl:Class ;
+                               owl:complementOf [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :canDealWith ;
+                                                  owl:someValuesFrom :AmbientCondition
+                                                ]
+                             ] ,
+                             [ rdf:type owl:Class ;
+                               owl:complementOf [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :isReliable ;
+                                                  owl:someValuesFrom :PowerEstimations
+                                                ]
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasCharacteristic ;
+                               owl:someValuesFrom :Effectiveness
+                             ] ;
+             rdfs:comment "SimpleModel class is equivalent to a set of performance model including ideal-diode, PVWatts, and Simple diode models." ;
+             rdfs:label "SimpleModel" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Simulation
+:Simulation rdf:type owl:Class ;
+            rdfs:subClassOf :Modeling ;
+            rdfs:label "Simulation" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SingleDiodeRp
+:SingleDiodeRp rdf:type owl:Class ;
+               rdfs:subClassOf :DetailedModel ;
+               rdfs:label "SingleDiodeRp" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SingleDiodeRs
+:SingleDiodeRs rdf:type owl:Class ;
+               rdfs:subClassOf :DetailedModel ;
+               rdfs:label "SingleDiodeRs" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SlidingModeControl
+:SlidingModeControl rdf:type owl:Class ;
+                    rdfs:subClassOf :ConventionalMethod ,
+                                    [ rdf:type owl:Class ;
+                                      owl:complementOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :hasCharacteristic ;
+                                                         owl:someValuesFrom :PV_Dependent
+                                                       ]
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasCharacteristic ;
+                                      owl:someValuesFrom :Convergence
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty :hasCharacteristic ;
+                                      owl:someValuesFrom :Efficency
+                                    ] ;
+                    rdfs:comment "This is the Sliding Mode Control method." ;
+                    rdfs:label "SlidingModeControl" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Smooth
+:Smooth rdf:type owl:Class ;
+        rdfs:subClassOf :Glazing ;
+        rdfs:label "Smooth" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Snow
+:Snow rdf:type owl:Class ;
+      rdfs:subClassOf :Particle ;
+      rdfs:label "Snow" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SnowDatabase
+:SnowDatabase rdf:type owl:Class ;
+              rdfs:subClassOf :DataLibrary ;
+              rdfs:label "SnowDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Snowy
+:Snowy rdf:type owl:Class ;
+       rdfs:subClassOf :ClimateCondition ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :needs ;
+                         owl:someValuesFrom :TemperatureDatabase
+                       ] ;
+       rdfs:label "Snowy" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Source
+:Source rdf:type owl:Class ;
+        rdfs:subClassOf :Shading ;
+        rdfs:label "ShadingSource" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#StandAlone
+:StandAlone rdf:type owl:Class ;
+            rdfs:subClassOf :Application ;
+            rdfs:label "StandAlone" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Sticky
+:Sticky rdf:type owl:Class ;
+        rdfs:subClassOf :Glazing ;
+        rdfs:label "Sticky" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SwarmIntelligence
+:SwarmIntelligence rdf:type owl:Class ;
+                   rdfs:subClassOf :MetaHeuristic ;
+                   rdfs:comment "Swarm Intelligence (SI) techniques mimicking evolution and social behavior of creatures in nature." ;
+                   rdfs:label "SwarmIntelligence" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SystemDesigned
+:SystemDesigned rdf:type owl:Class ;
+                rdfs:subClassOf :Planning ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :needs ;
+                                  owl:someValuesFrom :Simulation
+                                ] ;
+                rdfs:label "SystemDesigned" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#TEODI
+:TEODI rdf:type owl:Class ;
+       rdfs:subClassOf :PE_BasedMethod ;
+       rdfs:comment "This techniques is based on the equalization of the output operating points in correspondence of the forced Displacement of the Input operating points of two identical PV systems and will be indicated with the acronym TEODI. In basic TEODI, the PV system has two PV modules connected in parallel to its own DC-DC boost converter." ;
+       rdfs:label "TEODI" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#TemperatureDatabase
+:TemperatureDatabase rdf:type owl:Class ;
+                     rdfs:subClassOf :DataLibrary ;
+                     rdfs:label "TemperatureDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Thermal
+:Thermal rdf:type owl:Class ;
+         rdfs:subClassOf :PvTechnology ;
+         rdfs:label "Thermal" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ThreeDiodeModel
+:ThreeDiodeModel rdf:type owl:Class ;
+                 rdfs:subClassOf :DetailedModel ;
+                 rdfs:label "ThreeDiodeModel" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#TiltAngle
+:TiltAngle rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:unionOf ( :Flat
+                                               :Inclined
+                                             )
+                               ] ;
+           rdfs:subClassOf :PvType ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :affects ;
+                             owl:someValuesFrom [ owl:intersectionOf ( :Condition
+                                                                       :Severity
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ;
+           rdfs:label "TiltAngle" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#TrackingGP
+:TrackingGP rdf:type owl:Class ;
+            rdfs:subClassOf :MethodCharacteristic ;
+            rdfs:label "TrackingGP" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#TwoDiodeModel
+:TwoDiodeModel rdf:type owl:Class ;
+               rdfs:subClassOf :DetailedModel ;
+               rdfs:label "TwoDiodeModel" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#USC
+:USC rdf:type owl:Class ;
+     rdfs:subClassOf :Condition ;
+     rdfs:label "USC" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#WSA
+:WSA rdf:type owl:Class ;
+     rdfs:subClassOf :SwarmIntelligence ;
+     rdfs:comment "This is the Wasp Swarm Algorithm (WSA) method." ;
+     rdfs:label "WSA" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#WindDatabase
+:WindDatabase rdf:type owl:Class ;
+              rdfs:subClassOf :DataLibrary ;
+              rdfs:label "WindDatabase" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Windy
+:Windy rdf:type owl:Class ;
+       rdfs:subClassOf :ClimateCondition ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :needs ;
+                         owl:someValuesFrom :WindDatabase
+                       ] ;
+       rdfs:label "Windy" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#algorithm
+:algorithm rdf:type owl:Class ;
+           rdfs:subClassOf :MethodCharacteristic ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :affects ;
+                             owl:someValuesFrom :Mppt_basedController
+                           ] ;
+           rdfs:label "Algorithm" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#3PointWeightedAve
+<http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#3PointWeightedAve> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf :ConventionalMethod ,
+                                                                                                             [ rdf:type owl:Class ;
+                                                                                                               owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                                  owl:onProperty :hasCharacteristic ;
+                                                                                                                                  owl:someValuesFrom :Cost
+                                                                                                                                ]
+                                                                                                             ] ,
+                                                                                                             [ rdf:type owl:Class ;
+                                                                                                               owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                                  owl:onProperty :hasCharacteristic ;
+                                                                                                                                  owl:someValuesFrom :PV_Dependent
+                                                                                                                                ]
+                                                                                                             ] ,
+                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                               owl:onProperty :hasCharacteristic ;
+                                                                                                               owl:someValuesFrom :Efficency
+                                                                                                             ] ;
+                                                                                             rdfs:comment "This is the Three-point Weighted Average method." ;
+                                                                                             rdfs:label "3PointWeightedAve" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#GWO_P&O
+<http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#GWO_P&O> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :HybridMethod ;
+                                                                                   rdfs:label "GWO_P&O" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ModifiedP&O
+<http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ModifiedP&O> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf :HybridMethod ;
+                                                                                       rdfs:label "ModifiedP&O" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#P&O
+<http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#P&O> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf :ConventionalMethod ,
+                                                                                               [ rdf:type owl:Class ;
+                                                                                                 owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty :hasCharacteristic ;
+                                                                                                                    owl:someValuesFrom :Complexity
+                                                                                                                  ]
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Class ;
+                                                                                                 owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                    owl:onProperty :hasCharacteristic ;
+                                                                                                                    owl:someValuesFrom :Cost
+                                                                                                                  ]
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty :hasCharacteristic ;
+                                                                                                 owl:someValuesFrom :Convergence
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty :hasCharacteristic ;
+                                                                                                 owl:someValuesFrom :Efficency
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty :hasCharacteristic ;
+                                                                                                 owl:someValuesFrom :OscillationAroundGP
+                                                                                               ] ,
+                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                 owl:onProperty :hasCharacteristic ;
+                                                                                                 owl:someValuesFrom :RealTimeResponse
+                                                                                               ] ;
+                                                                               rdfs:comment "This is the Perturbation and Observation method." ;
+                                                                               rdfs:label "P&O" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#SimScale
+:SimScale rdf:type owl:NamedIndividual ;
+          rdfs:label "SimScale" .
+
+
+###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#Simulink
+:Simulink rdf:type owl:NamedIndividual ;
+          rdfs:label "Simulink" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ABC
+                :ACO
+                :AFSA
+                :BA
+                :CS
+                :DPO
+                :FOA
+                :GWO
+                :KH
+                :MBO
+                :MS
+                :PSO
+                :WSA
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ANFIS
+                :ANN
+                :FL
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AdhessiveResidues
+                :Furry
+                :Rough
+                :Smooth
+                :Sticky
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Amorphous
+                :MonoCrystalline
+                :PolyCrystalline
+                :Thermal
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BatteryCharger
+                :Commercial
+                :GridConnected
+                :PowerPlant
+                :Residential
+                :StandAlone
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Bayesian
+                :DE
+                :GA
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BetaMethod
+                :BiSectionSearch
+                :EsControl
+                :FractionalOcv
+                :FractionalScc
+                :HC
+                :IC
+                :LoadCVmax
+                :RcControl
+                :SlidingModeControl
+                <http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#3PointWeightedAve>
+                <http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#P&O>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Biological
+                :Chemical
+                :Electrostatic
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BypassDiode
+                :MCU_Based
+                :PE_qualizer
+                :TEODI
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CloudDatabase
+                :HumidityDatabase
+                :IrradianceDatabase
+                :PVDatabase
+                :PollutionDatabase
+                :SnowDatabase
+                :TemperatureDatabase
+                :WindDatabase
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DE_ANN
+                :DE_Fuzzy
+                :DE_GWO
+                :DE_PSO
+                :EnhancedBayesian
+                :ImprovedDE
+                :PSO_ANN
+                <http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#GWO_P&O>
+                <http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#ModifiedP&O>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Glazing
+                :PvTechnology
+                :TiltAngle
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :SingleDiodeRp
+                :SingleDiodeRs
+                :ThreeDiodeModel
+                :TwoDiodeModel
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
