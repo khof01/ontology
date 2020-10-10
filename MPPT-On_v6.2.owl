@@ -1191,7 +1191,7 @@
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#mpptController
 :mpptController rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Mppt_basedController ;
-                rdfs:range xsd:anyURI ;
+                rdfs:range xsd:string ;
                 rdfs:comment "The main technical features and parameters needed for the \"MPPT-basedController\" class are presented here, in addition to the PWM, MCU name, sensor, and input variables." ;
                 rdfs:label "mpptControllerTechnicalFeatures" .
 
@@ -1533,7 +1533,7 @@
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#tiltDegree
 :tiltDegree rdf:type owl:DatatypeProperty ;
             rdfs:domain :SystemDesigned ;
-            rdfs:range xsd:decimal ;
+            rdfs:range xsd:string ;
             rdfs:label "tiltDegree" .
 
 
@@ -3135,126 +3135,144 @@
 :shadingCondition1 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust and Sand"^^xsd:string ;
-                   :powerAdjustmentReport "2-2.5% decrease of power (Turkey)"^^xsd:string .
+                   :powerAdjustmentReport "2-2.5% decrease of power (Turkey)"^^xsd:string ;
+                   rdfs:comment "Dust and Sand"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition10
 :shadingCondition10 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust in Australia"^^xsd:string ;
-                    :powerAdjustmentReport "16–29% degradation of energy yield of 7 different PV modules without any cleaning procedure for 18 years (Australia)"^^xsd:string .
+                    :powerAdjustmentReport "16–29% degradation of energy yield of 7 different PV modules without any cleaning procedure for 18 years (Australia)"^^xsd:string ;
+                    rdfs:comment "Dust in Australlia" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition11
 :shadingCondition11 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust deposition (5 g/m2 )"^^xsd:string ;
-                    :powerAdjustmentReport "11% reduction in the energy production (5 g/m2 dust deposition)"^^xsd:string .
+                    :powerAdjustmentReport "11% reduction in the energy production (5 g/m2 dust deposition)"^^xsd:string ;
+                    rdfs:comment "Dust Deposition (5 g/ m2)" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition12
 :shadingCondition12 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust on short circuit current"^^xsd:string ;
-                    :powerAdjustmentReport "15-21% decrease in the short circuit current"^^xsd:string .
+                    :powerAdjustmentReport "15-21% decrease in the short circuit current"^^xsd:string ;
+                    rdfs:comment "Dust on short circuit current"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition13
 :shadingCondition13 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust on open circuit voltage"^^xsd:string ;
-                    :powerAdjustmentReport "2-6% reduction in the open circuit voltage"^^xsd:string .
+                    :powerAdjustmentReport "2-6% reduction in the open circuit voltage"^^xsd:string ;
+                    rdfs:comment "Dust on open circuit voltage"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition14
 :shadingCondition14 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust on Efficiency"^^xsd:string ;
-                    :powerAdjustmentReport "15-35% degradation for the efficiency "^^xsd:string .
+                    :powerAdjustmentReport "15-35% degradation for the efficiency "^^xsd:string ;
+                    rdfs:comment "Dust of efficiency" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition15
 :shadingCondition15 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust Without Rain"^^xsd:string ;
-                    :powerAdjustmentReport "About 15% losses with periods without rain (either textured or non-textured glasses module surface)"^^xsd:string .
+                    :powerAdjustmentReport "About 15% losses with periods without rain (either textured or non-textured glasses module surface)"^^xsd:string ;
+                    rdfs:comment "Dust without rain" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition16
 :shadingCondition16 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Dust on Annula Losses"^^xsd:string ;
-                    :powerAdjustmentReport "5% or more annual energy losses"^^xsd:string .
+                    :powerAdjustmentReport "5% or more annual energy losses"^^xsd:string ;
+                    rdfs:comment "Dust on annual losses" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition17
 :shadingCondition17 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Sand"^^xsd:string ;
-                    :powerAdjustmentReport "About 4% reduction in PV voltage (multi-crystalline PV)"^^xsd:string .
+                    :powerAdjustmentReport "About 4% reduction in PV voltage (multi-crystalline PV)"^^xsd:string ;
+                    rdfs:comment "Sand"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition18
 :shadingCondition18 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Red Soil"^^xsd:string ;
-                    :powerAdjustmentReport "About 7% decrease in voltage (multi-crystalline PV)"^^xsd:string .
+                    :powerAdjustmentReport "About 7% decrease in voltage (multi-crystalline PV)"^^xsd:string ;
+                    rdfs:comment "Red soil" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition19
 :shadingCondition19 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Ash"^^xsd:string ;
-                    :powerAdjustmentReport "25% PV voltage reduction (multi-crystalline PV)"^^xsd:string .
+                    :powerAdjustmentReport "25% PV voltage reduction (multi-crystalline PV)"^^xsd:string ;
+                    rdfs:comment "Ash"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition2
 :shadingCondition2 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Airborne Dust"^^xsd:string ;
-                   :powerAdjustmentReport "At least 33.5% decease in efficiency"^^xsd:string .
+                   :powerAdjustmentReport "At least 33.5% decease in efficiency"^^xsd:string ;
+                   rdfs:comment "Airborne dust" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition20
 :shadingCondition20 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Calcium Carbonate"^^xsd:string ;
-                    :powerAdjustmentReport "5% reduction in PV voltage (multi-crystalline PV)"^^xsd:string .
+                    :powerAdjustmentReport "5% reduction in PV voltage (multi-crystalline PV)"^^xsd:string ;
+                    rdfs:comment "Calcium Carbonate"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition21
 :shadingCondition21 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Silica Gel"^^xsd:string ;
-                    :powerAdjustmentReport "About 4% reduction in PV voltage (multi-crystalline PV)"^^xsd:string .
+                    :powerAdjustmentReport "About 4% reduction in PV voltage (multi-crystalline PV)"^^xsd:string ;
+                    rdfs:comment "Silica gel" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition22
 :shadingCondition22 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Sonw on Evaluated PV Energy"^^xsd:string ;
-                    :powerAdjustmentReport "50% lower than evaluated PV energy"^^xsd:string .
+                    :powerAdjustmentReport "50% lower than evaluated PV energy"^^xsd:string ;
+                    rdfs:comment "Snow on evaluated PV energy" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition23
 :shadingCondition23 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Sonw on Annual Yield"^^xsd:string ;
-                    :powerAdjustmentReport "0.3-2.7% decrease in annual yield "^^xsd:string .
+                    :powerAdjustmentReport "0.3-2.7% decrease in annual yield "^^xsd:string ;
+                    rdfs:comment "Snow on Annual Yield" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition24
 :shadingCondition24 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Sonw on Yearly Energy Loss"^^xsd:string ;
-                    :powerAdjustmentReport "4.25% yearly energy loss"^^xsd:string .
+                    :powerAdjustmentReport "4.25% yearly energy loss"^^xsd:string ;
+                    rdfs:comment "Snow on yearly energy loss" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition25
 :shadingCondition25 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Sonw on one Year's Production"^^xsd:string ;
-                    :powerAdjustmentReport "1-5-5.2% of one year’s production"^^xsd:string .
+                    :powerAdjustmentReport "1-5-5.2% of one year’s production"^^xsd:string ;
+                    rdfs:comment "Snow on one year's production" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition26
@@ -3262,7 +3280,8 @@
                              :Shading ;
                     :particleType "Sonw depth more than 1 inch"^^xsd:string ;
                     :powerAdjustmentReport """I) Snow depth more than 1 inch cause 45% of daily loss, and  less than 1 inch cause 11% daily loss [for 30° module angle].
-II) Snow depth more than 1 inch cause 26% of daily loss, and less than 1 inch cause 5% daily loss [for 40° module angle]."""^^xsd:string .
+II) Snow depth more than 1 inch cause 26% of daily loss, and less than 1 inch cause 5% daily loss [for 40° module angle]."""^^xsd:string ;
+                    rdfs:comment "Snow depth more than 1 inch" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition27
@@ -3270,140 +3289,160 @@ II) Snow depth more than 1 inch cause 26% of daily loss, and less than 1 inch ca
                              :Shading ;
                     :particleType "Sonw depth less than 1 inch"^^xsd:string ;
                     :powerAdjustmentReport """I) Snow depth more than 1 inch cause 26% of daily loss, and less than 1 inch cause 5% daily loss [for 40° module angle].
-II) Snow depth more than 1 inch cause 45% of daily loss, and  less than 1 inch cause 11% daily loss [for 30° module angle]."""^^xsd:string .
+II) Snow depth more than 1 inch cause 45% of daily loss, and  less than 1 inch cause 11% daily loss [for 30° module angle]."""^^xsd:string ;
+                    rdfs:comment "Snow depth less than 1 inch" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition28
 :shadingCondition28 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Sonw on Annual Energy Production Losses"^^xsd:string ;
-                    :powerAdjustmentReport "1%-12% annual energy production losses "^^xsd:string .
+                    :powerAdjustmentReport "1%-12% annual energy production losses "^^xsd:string ;
+                    rdfs:comment "Snow on annual energy production losses" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition29
 :shadingCondition29 rdf:type owl:NamedIndividual ,
                              :Shading ;
                     :particleType "Cloud"^^xsd:string ;
-                    :powerAdjustmentReport "77% reduction in power output"^^xsd:string .
+                    :powerAdjustmentReport "77% reduction in power output"^^xsd:string ;
+                    rdfs:comment "Cloud"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition3
 :shadingCondition3 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Cement Dust"^^xsd:string ;
-                   :powerAdjustmentReport "80% drop in PV short circuit voltage (deposition of 73 g/m2)"^^xsd:string .
+                   :powerAdjustmentReport "80% drop in PV short circuit voltage (deposition of 73 g/m2)"^^xsd:string ;
+                   rdfs:comment "Cement dust" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition4
 :shadingCondition4 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust in Cyprus"^^xsd:string ;
-                   :powerAdjustmentReport "6-13% decrease in output power (Cyprus)"^^xsd:string .
+                   :powerAdjustmentReport "6-13% decrease in output power (Cyprus)"^^xsd:string ;
+                   rdfs:comment "Dust in Cyprus"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition5
 :shadingCondition5 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust in Spain"^^xsd:string ;
-                   :powerAdjustmentReport "Average of 4.4% daily energy loss that could increase to 20% in dry conditions (Spain)"^^xsd:string .
+                   :powerAdjustmentReport "Average of 4.4% daily energy loss that could increase to 20% in dry conditions (Spain)"^^xsd:string ;
+                   rdfs:comment "Dust in Spain"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition6
 :shadingCondition6 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust in Saudi Arabia"^^xsd:string ;
-                   :powerAdjustmentReport "50% reduction in the power for the panels exposed without cleaning for six months (Saudi Arabia)"^^xsd:string .
+                   :powerAdjustmentReport "50% reduction in the power for the panels exposed without cleaning for six months (Saudi Arabia)"^^xsd:string ;
+                   rdfs:comment "Dust in Saudi Arabia"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition7
 :shadingCondition7 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust on Silicon Panel"^^xsd:string ;
-                   :powerAdjustmentReport "2.78% daily reduction for silicon solar panels in short circuit current"^^xsd:string .
+                   :powerAdjustmentReport "2.78% daily reduction for silicon solar panels in short circuit current"^^xsd:string ;
+                   rdfs:comment "Dust on Silicon panel" .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition8
 :shadingCondition8 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust in UAE"^^xsd:string ;
-                   :powerAdjustmentReport "10% power reduction after 5 weeks of the exposure (UAE) and 10% in module efficiency (Qatar)"^^xsd:string .
+                   :powerAdjustmentReport "10% power reduction after 5 weeks of the exposure (UAE) and 10% in module efficiency (Qatar)"^^xsd:string ;
+                   rdfs:comment "Dust in UAE"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#shadingCondition9
 :shadingCondition9 rdf:type owl:NamedIndividual ,
                             :Shading ;
                    :particleType "Dust in Palestine"^^xsd:string ;
-                   :powerAdjustmentReport "5-6% decease in module efficiency (Palestine)"^^xsd:string .
+                   :powerAdjustmentReport "5-6% decease in module efficiency (Palestine)"^^xsd:string ;
+                   rdfs:comment "Dust in Palestine"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned1
 :systemdesigned1 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
-                 :powerAdjustmentReport "Power is 5.6% to 17.3% higher than 6° tilt depending to the site plant (Turkey)"^^xsd:string ;
-                 :tiltDegree "25° tilt angle"^^xsd:string .
+                 :powerAdjustmentReport "Power is 5.6% to 17.3% higher than 6 degree tilt depending to the site plant (Turkey)"^^xsd:string ;
+                 :tiltDegree "25 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "25 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned10
 :systemdesigned10 rdf:type owl:NamedIndividual ,
                            :SystemDesigned ;
                   :powerAdjustmentReport "Snow depth >1” cause 26% of daily loss, and <1” cause 5% daily loss"^^xsd:string ;
-                  :tiltDegree "40° tilt angle"^^xsd:string .
+                  :tiltDegree "40 degree tilt angle"^^xsd:string ;
+                  rdfs:comment "40 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned2
 :systemdesigned2 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "17.4% energy loss per month for south-facing panels (Egypt)"^^xsd:string ;
-                 :tiltDegree "45° tilt angle"^^xsd:string .
+                 :tiltDegree "45 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "45 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned3
 :systemdesigned3 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "70% losses in winter months"^^xsd:string ;
-                 :tiltDegree "23° tilt angle"^^xsd:string .
+                 :tiltDegree "23 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "23 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned4
 :systemdesigned4 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "40% reductions in winter months"^^xsd:string ;
-                 :tiltDegree "40° tilt angle"^^xsd:string .
+                 :tiltDegree "40 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "40 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned5
 :systemdesigned5 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "18% losses in generation "^^xsd:string ;
-                 :tiltDegree "0° tilt angle"^^xsd:string .
+                 :tiltDegree "0 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "0 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned6
 :systemdesigned6 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "15% losses (annually estimated)"^^xsd:string ;
-                 :tiltDegree "24° tilt angle"^^xsd:string .
+                 :tiltDegree "24 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "24 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned7
 :systemdesigned7 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "12% losses (annually estimated)"^^xsd:string ;
-                 :tiltDegree "39° tilt angle"^^xsd:string .
+                 :tiltDegree "39 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "39 degree tilt angle"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned8
 :systemdesigned8 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "Produce about 30% more electricity than the tilted system"^^xsd:string ;
-                 :tiltDegree "Dual axis"^^xsd:string .
+                 :tiltDegree "Dual axis"^^xsd:string ;
+                 rdfs:comment "Dual axis"^^xsd:string .
 
 
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#systemdesigned9
 :systemdesigned9 rdf:type owl:NamedIndividual ,
                           :SystemDesigned ;
                  :powerAdjustmentReport "Snow depth >1” cause 45% of daily loss, and <1” cause 11% daily loss"^^xsd:string ;
-                 :tiltDegree "30° tilt angle"^^xsd:string .
+                 :tiltDegree "30 degree tilt angle"^^xsd:string ;
+                 rdfs:comment "30 degree tilt angle"^^xsd:string .
 
 
 #################################################################

@@ -1198,7 +1198,7 @@
 ###  http://www.semanticweb.org/farhad/ontologies/2020/3/untitled-ontology-39#mpptController
 :mpptController rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Mppt_basedController ;
-                rdfs:range xsd:anyURI ;
+                rdfs:range xsd:string ;
                 rdfs:comment "The main technical features and parameters needed for the \"MPPT-basedController\" class are presented here, in addition to the PWM, MCU name, sensor, and input variables." ;
                 rdfs:label "mpptControllerTechnicalFeatures" .
 
